@@ -1,0 +1,65 @@
+@keyframes tumtum {
+    0% {
+        transform: translateY(-500px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    font-size: larger;
+    background-color: rgb(225, 132, 225);
+    text-align: center;
+    padding-top: 1.5%;
+    padding-bottom: 2%;
+    animation: tumtum 2s;
+}
+
+#logginBody, #registerBody {
+    text-align: center;
+}
+
+#logginForm, #registerForm {
+    box-shadow: black 2px 2px 2px;
+    background-color: rgb(225, 192, 225);
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+#mainUserBody {
+  text-align: center;
+}
+
+#mainUserBodyDiv1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Espacio entre las cajas */
+}
+
+.bills, .nots {
+  background-color: bisque;
+  box-shadow: 2px 2px 2px;
+  padding: 20px; /* Agrega un relleno para aumentar el tamaño de las cajas */
+  width: 400px; /* Ancho fijo para las cajas */
+  max-height: 200px; /* Altura máxima para las cajas */
+  overflow-y: auto; /* Controla el desplazamiento vertical del contenido dentro de las cajas */
+}
+
+.bills p, .nots p {
+  margin: 5px; /* Reduce el margen para adaptarse mejor al espacio disponible */
+  max-width: 100%; /* Evita que el texto se desborde de las cajas */
+  overflow-wrap: break-word; /* Rompe las palabras largas si no caben en la caja */
+  word-wrap: break-word; /* Fallback para navegadores que no soportan overflow-wrap */
+  white-space: normal; /* Permite que el texto envuelva automáticamente dentro de la caja */
+}
+
+.textarea {
+  text-align: center;
+}
